@@ -5,8 +5,10 @@
     font-family: Helvetica, sans-serif;
     font-weight: bold;
 }
-body{
+html, body{
     background-color: rgb(187, 56, 56);
+    padding: 0;
+    margin: 0;
 }
 
 nav{
@@ -82,9 +84,16 @@ nav ul, nav div, nav li{
     width: 100%;
     padding: 0;
     margin: 0;
+    background-color: rgb(36,36,36);
 }
 
-div iframe{
-    padding: 0;
-    margin: 0;
+iframe{
+    margin: none;
+    padding: none;
+    border: none;
+    line-height: 0;
+    float: left;
+    overflow: hidden;
+    display: block;
+    background-color: rgb(153, 153, 153);
 }
