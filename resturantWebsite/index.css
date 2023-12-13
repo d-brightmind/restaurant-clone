@@ -164,10 +164,57 @@ iframe{
     font-weight: bold;
 }
 
-.first{
+.images-section{
     display: flex;
+    text-align: center;
+}
+.first-container{
+    width: 33.1%;
     height: 400px;
-    width: 400px;
-    background-color: rgb(167, 132, 58);
-    background: url("https://images.getbento.com/accounts/b1e41b778dec00856dafecad5140d46d/media/images/92669Donuts.png?w=1200&amp;fit=crop&amp;auto=compress,format&amp;crop=focalpoint&amp;fp-x=0.5&amp;fp-y=0.5");
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.first, .second, .third{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s;
+    cursor: pointer;
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("https://images.getbento.com/accounts/b1e41b778dec00856dafecad5140d46d/media/images/92669Donuts.png?");
+    background-position: center;
+    background-size: cover;
+}
+
+.first h2, .second h2, .third h2{
+    display: none;
+    font-size: 35px;
+    color: #ffffff !important;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+.first-container:hover .first, 
+.first-container:hover .second, 
+.first-container:hover .third{
+    display: block;
+    transform: scale(1.2);
+    transition: all .5s;
+}
+.second{
+    background: url("https://images.getbento.com/accounts/b1e41b778dec00856dafecad5140d46d/media/images/12457Catering.png?");
+    background-position: center;
+    background-size: cover;
+}
+.third{
+    background: url("https://images.getbento.com/accounts/b1e41b778dec00856dafecad5140d46d/media/images/31500Layer_6.png?");
+    background-position: center;
+    background-size: cover;
 }
