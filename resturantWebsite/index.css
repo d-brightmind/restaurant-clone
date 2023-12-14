@@ -1,15 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: white;
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    box-sizing: border-box;
 }
 html, body{
-    background-color: rgb(187, 56, 56);
     padding: 0;
     margin: 0;
+    background-color: white;
+    font-family: 'breeregular', Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 nav{
@@ -30,6 +28,7 @@ nav ul, nav div, nav li{
     background: transparent;
     text-transform: uppercase;
     padding: 10px;
+    font-weight: bold;
 }
 .nav-button{
     padding: 5px 20px;
@@ -92,14 +91,14 @@ nav ul, nav div, nav li{
 
 iframe{
     margin: 0px;
-    padding: -30px;
     border: none;
     line-height: 0;
     float: left;
     overflow-x: hidden;
-    display: block;
+    display: flex;
     white-space: nowrap;
     left: 0;
+    top: 0;
 }
 
 .visit-hero{
@@ -119,7 +118,7 @@ iframe{
     justify-content: space-between;
     align-items: center;
     width: 75%;
-    height: 620px;
+    height: 520px;
     padding: 50px;
     border-radius: 20px;
     background-color: rgb(187,216,188);
@@ -169,52 +168,99 @@ iframe{
     text-align: center;
 }
 .first-container{
-    width: 33.1%;
+    width: 33.33%;
     height: 400px;
     overflow: hidden;
     position: relative;
-    display: inline-block;
     cursor: pointer;
 }
-.first, .second, .third{
-    height: 100%;
+.first, 
+.second, 
+.third{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    background-size: cover;
+    height: 100%;
+    padding: 30px;
     background-repeat: no-repeat;
-    transition: all .5s;
-    cursor: pointer;
-    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("https://images.getbento.com/accounts/b1e41b778dec00856dafecad5140d46d/media/images/92669Donuts.png?");
-    background-position: center;
-    background-size: cover;
+    transition: all 1s;
 }
 
 .first h2, .second h2, .third h2{
-    display: none;
-    font-size: 35px;
-    color: #ffffff !important;
-    font-family: sans-serif;
-    text-align: center;
-    margin: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    cursor: pointer;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    padding: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: none;
 }
-.first-container:hover .first, 
-.first-container:hover .second, 
-.first-container:hover .third{
-    display: block;
+.first:hover, 
+.second:hover,
+.third:hover{
     transform: scale(1.2);
-    transition: all .5s;
+}
+.first{
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(https://images.getbento.com/accounts/b1e41b778dec00856dafecad5140d46d/media/images/92669Donuts.png?);
+    background-position: center;
+    background-size: cover;
 }
 .second{
-    background: url("https://images.getbento.com/accounts/b1e41b778dec00856dafecad5140d46d/media/images/12457Catering.png?");
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("https://images.getbento.com/accounts/b1e41b778dec00856dafecad5140d46d/media/images/12457Catering.png?");
     background-position: center;
     background-size: cover;
 }
 .third{
-    background: url("https://images.getbento.com/accounts/b1e41b778dec00856dafecad5140d46d/media/images/31500Layer_6.png?");
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("https://images.getbento.com/accounts/b1e41b778dec00856dafecad5140d46d/media/images/31500Layer_6.png?");
     background-position: center;
     background-size: cover;
+}
+
+.party-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    gap: 60px;
+    background-color: rgb(221,194,234);
+    margin-top: 60px;
+}
+.party-text{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: center;
+    align-items: start;
+    padding: 60px;
+    gap: 20px;
+    color: rgb(72,71,158);
+    font-family: 'breeregular' !important;
+    font-weight: normal;
+    font-style: normal;
+}
+.party-text h2{
+    font-weight: bold;
+    font-style: normal;
+    font-size: 40px;
+}
+.party-image{
+    width: 400px;
+    height: 400px;
+    background: url(https://images.getbento.com/accounts/b1e41b778dec00856dafecad5140d46d/media/images/56708Peter_White_in_Frame2.png?);
+    background-position: center;
+    background-size: cover;
+}
+
+
+@font-face {
+    font-family: 'breeregular';
+    src: url('./Custom\ Font/bree_regular-webfont.woff2') format('woff2'),
+         url('./Custom\ Font/bree_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
