@@ -22,7 +22,9 @@ nav img{
     height: 50px;
 }
 
-nav ul, nav div, nav li{
+nav ul, 
+nav div, 
+nav li{
     display: flex;
     justify-content: space-between;
     background: transparent;
@@ -38,6 +40,7 @@ nav ul, nav div, nav li{
     color: rgb(246,198,94);
     font-family: Helvetica, sans-serif;
     font-weight: bold;
+    border: none;
 }
 
 .dropdown{
@@ -76,6 +79,7 @@ nav ul, nav div, nav li{
     background-color: black;
     width: 100%;
     height: 40px;
+    color: white;
 }
 
 .hero{
@@ -348,6 +352,78 @@ iframe{
     font-weight: bold;
     font-style: normal;
     font-size: 40px;
+}
+
+.backdoordonuts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    font-size: 30px;
+}
+.backdoordonuts a{
+    color: white;
+    font-size: 20px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+    height: 50px;
+    padding: 10px;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    gap: 5px;
+}
+.social-icons i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 100%;
+    color: white;
+}
+.footer-links{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 80%;
+    gap: 10px;
+}
+.footer-links li, .footer-links ul{
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 99%;
+    height: 20px;
+    background-color: rgb(72,30,92);
+    padding: 5px;
+}
+.copyright a{
+    text-decoration: none;
+    color: white;
 }
 @font-face {
     font-family: 'breeregular';
