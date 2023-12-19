@@ -120,6 +120,7 @@ iframe{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: scroll;
 }
 
 .section-content{
@@ -131,6 +132,7 @@ iframe{
     padding: 50px;
     border-radius: 20px;
     background-color: rgb(187,216,188);
+    background-attachment: scroll;
 }
 
 .section-image{
@@ -139,9 +141,11 @@ iframe{
     width: 40%;
     margin-right: 10px;
     border-radius: 40px;
+    background-attachment: scroll;
 }
 .section-image img{
     border-radius: 40px;
+    background-attachment: scroll;
 }
 
 .section-text{
@@ -154,11 +158,13 @@ iframe{
     align-items: start;
     justify-content: center;
     background: transparent;
+    background-attachment: scroll;
 }
 .section-text h1{
     background: transparent;
     font-size: xx-large;
     font-weight: bolder;
+    background-attachment: scroll;
     color: rgb(72,30,92);
 }
 .section-text p{
