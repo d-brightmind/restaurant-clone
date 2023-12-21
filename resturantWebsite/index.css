@@ -34,7 +34,7 @@ nav li{
     text-decoration: none;
     cursor: pointer;
 }
-nav a{
+li a{
     background: transparent;
     text-transform: uppercase;
     font-weight: bold;
