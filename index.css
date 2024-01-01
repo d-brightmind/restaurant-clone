@@ -95,6 +95,7 @@ li a{
     display: flex;
     height: 100vh;
     width: 100%;
+    position: relative;
     top: 0px; 
     left: -0.166667px;
     padding: 0;
@@ -105,15 +106,10 @@ li a{
 
 iframe{
     margin: 0;
-    padding: 0;
-    display: block;
+    padding: 0 !important;
+    position: absolute;
     border: none;
-    line-height: 0;
-    float: left;
-    overflow: hidden;
     white-space: nowrap;
-    top: 0;
-    left: 0;
     background-position: center;
     background-size: cover;
 }
