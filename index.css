@@ -96,8 +96,6 @@ li a{
     height: 100vh;
     width: 100%;
     position: relative;
-    top: 0px; 
-    left: -0.166667px;
     padding: 0;
     margin: 0;
     line-height: 0;
@@ -110,8 +108,6 @@ iframe{
     position: absolute;
     border: none;
     white-space: nowrap;
-    background-position: center;
-    background-size: cover;
 }
 
 .visit-hero{
