@@ -108,6 +108,7 @@ iframe{
     position: absolute;
     border: none;
     white-space: nowrap;
+    background-color: black;
 }
 
 .visit-hero{
